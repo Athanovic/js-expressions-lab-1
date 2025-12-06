@@ -2,129 +2,177 @@
   "stats": {
     "suites": 5,
     "tests": 8,
-    "passes": 8,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2025-11-30T14:22:04.575Z",
-    "end": "2025-11-30T14:22:06.377Z",
-    "duration": 1802
+    "failures": 8,
+    "start": "2025-12-06T16:23:37.417Z",
+    "end": "2025-12-06T16:23:40.456Z",
+    "duration": 3039
   },
   "tests": [
     {
       "title": "is a floating number",
       "fullTitle": "index.js tot_temperature_in_fahrenheit is a floating number",
-      "duration": 2,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: tot_temperature_in_fahrenheit is not defined\n    at Context.<anonymous> (test\\indexTest.js:27:13)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "tot_temperature_in_fahrenheit is not defined"
+      }
     },
     {
       "title": "is accurate with a tolerance of 0.2 degrees",
       "fullTitle": "index.js tot_temperature_in_fahrenheit is accurate with a tolerance of 0.2 degrees",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: tot_temperature_in_fahrenheit is not defined\n    at Context.<anonymous> (test\\indexTest.js:34:20)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "tot_temperature_in_fahrenheit is not defined"
+      }
     },
     {
       "title": "is a floating number",
       "fullTitle": "index.js tot_temperature_in_celsius is a floating number",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: tot_temperature_in_celsius is not defined\n    at Context.<anonymous> (test\\indexTest.js:40:13)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "tot_temperature_in_celsius is not defined"
+      }
     },
     {
       "title": "is accurate with a tolerance of 0.2 degrees",
       "fullTitle": "index.js tot_temperature_in_celsius is accurate with a tolerance of 0.2 degrees",
       "duration": 1,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: tot_temperature_in_celsius is not defined\n    at Context.<anonymous> (test\\indexTest.js:47:20)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "tot_temperature_in_celsius is not defined"
+      }
     },
     {
       "title": "is a floating number",
       "fullTitle": "index.js avg_temperature_in_fahrenheit is a floating number",
       "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: avg_temperature_in_fahrenheit is not defined\n    at Context.<anonymous> (test\\indexTest.js:55:20)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "avg_temperature_in_fahrenheit is not defined"
+      }
     },
     {
       "title": "is accurate with a tolerance of 0.2 degrees",
       "fullTitle": "index.js avg_temperature_in_fahrenheit is accurate with a tolerance of 0.2 degrees",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: avg_temperature_in_fahrenheit is not defined\n    at Context.<anonymous> (test\\indexTest.js:60:20)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "avg_temperature_in_fahrenheit is not defined"
+      }
     },
     {
       "title": "is a floating number",
       "fullTitle": "index.js avg_temperature_in_celsius is a floating number",
       "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: avg_temperature_in_celsius is not defined\n    at Context.<anonymous> (test\\indexTest.js:66:13)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "avg_temperature_in_celsius is not defined"
+      }
     },
     {
       "title": "is accurate with a tolerance of 0.2 degrees",
       "fullTitle": "index.js avg_temperature_in_celsius is accurate with a tolerance of 0.2 degrees",
       "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: avg_temperature_in_celsius is not defined\n    at Context.<anonymous> (test\\indexTest.js:73:20)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "avg_temperature_in_celsius is not defined"
+      }
     }
   ],
   "pending": [],
-  "failures": [],
-  "passes": [
+  "failures": [
     {
       "title": "is a floating number",
       "fullTitle": "index.js tot_temperature_in_fahrenheit is a floating number",
-      "duration": 2,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: tot_temperature_in_fahrenheit is not defined\n    at Context.<anonymous> (test\\indexTest.js:27:13)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "tot_temperature_in_fahrenheit is not defined"
+      }
     },
     {
       "title": "is accurate with a tolerance of 0.2 degrees",
       "fullTitle": "index.js tot_temperature_in_fahrenheit is accurate with a tolerance of 0.2 degrees",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: tot_temperature_in_fahrenheit is not defined\n    at Context.<anonymous> (test\\indexTest.js:34:20)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "tot_temperature_in_fahrenheit is not defined"
+      }
     },
     {
       "title": "is a floating number",
       "fullTitle": "index.js tot_temperature_in_celsius is a floating number",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: tot_temperature_in_celsius is not defined\n    at Context.<anonymous> (test\\indexTest.js:40:13)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "tot_temperature_in_celsius is not defined"
+      }
     },
     {
       "title": "is accurate with a tolerance of 0.2 degrees",
       "fullTitle": "index.js tot_temperature_in_celsius is accurate with a tolerance of 0.2 degrees",
       "duration": 1,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: tot_temperature_in_celsius is not defined\n    at Context.<anonymous> (test\\indexTest.js:47:20)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "tot_temperature_in_celsius is not defined"
+      }
     },
     {
       "title": "is a floating number",
       "fullTitle": "index.js avg_temperature_in_fahrenheit is a floating number",
       "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: avg_temperature_in_fahrenheit is not defined\n    at Context.<anonymous> (test\\indexTest.js:55:20)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "avg_temperature_in_fahrenheit is not defined"
+      }
     },
     {
       "title": "is accurate with a tolerance of 0.2 degrees",
       "fullTitle": "index.js avg_temperature_in_fahrenheit is accurate with a tolerance of 0.2 degrees",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: avg_temperature_in_fahrenheit is not defined\n    at Context.<anonymous> (test\\indexTest.js:60:20)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "avg_temperature_in_fahrenheit is not defined"
+      }
     },
     {
       "title": "is a floating number",
       "fullTitle": "index.js avg_temperature_in_celsius is a floating number",
       "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: avg_temperature_in_celsius is not defined\n    at Context.<anonymous> (test\\indexTest.js:66:13)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "avg_temperature_in_celsius is not defined"
+      }
     },
     {
       "title": "is accurate with a tolerance of 0.2 degrees",
       "fullTitle": "index.js avg_temperature_in_celsius is accurate with a tolerance of 0.2 degrees",
       "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "ReferenceError: avg_temperature_in_celsius is not defined\n    at Context.<anonymous> (test\\indexTest.js:73:20)\n    at process.processImmediate (node:internal/timers:504:21)",
+        "message": "avg_temperature_in_celsius is not defined"
+      }
     }
-  ]
+  ],
+  "passes": []
 }
