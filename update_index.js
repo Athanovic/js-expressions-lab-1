@@ -86,3 +86,11 @@ console.log("Total temperature in Fahrenheit:", tot_temperature_in_fahrenheit);
 console.log("Total temperature in Celsius:", tot_temperature_in_celsius);
 console.log("Average temperature in Fahrenheit:", avg_temperature_in_fahrenheit);
 console.log("Average temperature in Celsius:", avg_temperature_in_celsius);
+
+// Export the variables so tests can access them
+module.exports = {
+  tot_temperature_in_fahrenheit,
+  tot_temperature_in_celsius,
+  avg_temperature_in_fahrenheit,
+  avg_temperature_in_celsius
+};

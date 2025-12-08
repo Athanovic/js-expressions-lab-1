@@ -1,57 +1,33 @@
-/**
- * createLoginTracker - Creates a secure login tracker for a user
- * @param {Object} userInfo - An object containing username and password
- * Example:
- * {
- *   username: "user1",
- *   password: "password123"
- * }
- * @returns {Function} loginAttempt - A function to attempt logging in with a password
- */
-function createLoginTracker(userInfo) {
-    // Initialize the number of login attempts
-    let attemptCount = 0;
+// Step 1: Temperature Data
+const tempsF = [32, 70, 80, 72, 68, 75, 82, 65, 77, 78, 73, 79, 71, 74, 76];
+const tempsC = [25, 18, 15, 28, 20, 23, 30, 22, 26, 24, 21, 27, 19, 17, 29];
 
-    /**
-     * loginAttempt - Inner arrow function to handle each login attempt
-     * @param {string} passwordAttempt - The password entered by the user
-     * @returns {string} - Result message indicating success, failure, or account lock
-     */
-    const loginAttempt = (passwordAttempt) => {
-        // Increment attempt count each time this function is called
-        attemptCount++;
+// Step 2: Convert Temperatures
+const tempsFtoC = tempsF.map(f => (f - 32) * 5 / 9);
+const tempsCtoF = tempsC.map(c => (c * 9 / 5) + 32);
 
-        // If more than 3 attempts have been made, lock the account
-        if (attemptCount > 3) {
-            return "Account locked due to too many failed login attempts";
-        }
+// Step 3: Combine for totals
+const allTempsF = [...tempsF, ...tempsCtoF];
+const allTempsC = [...tempsFtoC, ...tempsC];
 
-        // Check if the entered password matches the stored password
-        if (passwordAttempt === userInfo.password) {
-            return "Login successful";
-        } else {
-            // Password is incorrect but attempt limit not yet reached
-            return `Attempt ${attemptCount}: Login failed`;
-        }
-    };
+// Totals
+const tot_temperature_in_fahrenheit = allTempsF.reduce((a, b) => a + b, 0);
+const tot_temperature_in_celsius = allTempsC.reduce((a, b) => a + b, 0);
 
-    // Return the inner function so it can be used externally
-    return loginAttempt;
-}
+// Averages
+const avg_temperature_in_fahrenheit = tot_temperature_in_fahrenheit / 30;
+const avg_temperature_in_celsius = tot_temperature_in_celsius / 30;
 
-// Export the function for testing purposes (required by the auto-grader)
-module.exports = createLoginTracker;
+// Step 4: Print Results
+console.log("Total temperature in Fahrenheit:", tot_temperature_in_fahrenheit);
+console.log("Total temperature in Celsius:", tot_temperature_in_celsius);
+console.log("Average temperature in Fahrenheit:", avg_temperature_in_fahrenheit);
+console.log("Average temperature in Celsius:", avg_temperature_in_celsius);
 
-/* -------------------------
- Example Usage (for local testing only)
- Uncomment to test manually in Node.js
-----------------------------*/
-
-// const tracker = createLoginTracker({ username: "user1", password: "password123" });
-// console.log(tracker("wrongpass"));   // Attempt 1: Login failed
-// console.log(tracker("12345"));       // Attempt 2: Login failed
-// console.log(tracker("password123")); // Login successful
-// console.log(tracker("anything"));    // Account locked due to too many failed login attempts
-
-
-
+// Export for testing
+module.exports = {
+  tot_temperature_in_fahrenheit,
+  tot_temperature_in_celsius,
+  avg_temperature_in_fahrenheit,
+  avg_temperature_in_celsius
+};
